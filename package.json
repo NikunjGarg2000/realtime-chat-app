@@ -1,0 +1,21 @@
+{
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "It is a realtime chat app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "Nikunj Garg",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.1",
+    "react-notification-badge": "^1.5.1",
+    "socket.io": "^4.5.1"
+  }
+}
