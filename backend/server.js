@@ -7,6 +7,7 @@ const chatRoutes = require("./routes/chatRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const path = require("path");
+const BASE_URL = process.env.BASE_URL
 
 dotenv.config();
 connectDB();
@@ -47,7 +48,7 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000",
+    origin: `${BASE_URL}`,
     // credentials: true,
   },
 });
